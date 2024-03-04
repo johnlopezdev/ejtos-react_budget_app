@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+select.currency-dropdown {
+  background-color: transparent;
+  padding: 8px 16px;
+  border: none;
+  color: #fff;
+}
+
+select.currency-dropdown:hover {
+  /* Optional hover effect: */
+  background-color: #B0E5B0; /* Slightly lighter background on hover */
+}
+
+select.currency-dropdown > .currency-dropdown-option {
+  font-size: 20px;
+  background-color: #a3cfbb;
+  padding: 16px
+}
