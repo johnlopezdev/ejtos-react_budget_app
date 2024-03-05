@@ -12,20 +12,28 @@ code {
     monospace;
 }
 
-select.currency-dropdown {
+.currency-dropdown {
   background-color: transparent;
   padding: 8px 16px;
   border: none;
   color: #fff;
 }
 
-select.currency-dropdown:hover {
-  /* Optional hover effect: */
-  background-color: #B0E5B0; /* Slightly lighter background on hover */
+.currency-dropdown option:hover {
+  background-color: #fff;
 }
 
-select.currency-dropdown > .currency-dropdown-option {
+.alert.currency-wrapper {
+  color: #fff;
+  background-color: rgb(118,210,118);
+}
+
+.currency-dropdown-option {
   font-size: 20px;
-  background-color: #a3cfbb;
+  background-color: rgb(118,210,118);
   padding: 16px
+}
+
+.currency-dropdown-option:hover {
+  background-color: rgb(255,255,255);
 }

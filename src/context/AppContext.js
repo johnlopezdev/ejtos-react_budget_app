@@ -91,7 +91,6 @@ const initialState = {
 
 // 2. Creates the context this is the thing our components import and use to get the state
 export const AppContext = createContext();
-
 // 3. Provider component - wraps the components we want to give access to the state
 // Accepts the children, which are the nested(wrapped) components
 export const AppProvider = (props) => {

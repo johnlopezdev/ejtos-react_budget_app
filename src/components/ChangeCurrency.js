@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../context/AppContext';
+import React, {useContext} from 'react';
+import {AppContext} from '../context/AppContext';
+
 const ChangeCurrency = () => {
-    const {dispatch } = useContext(AppContext);
-    const changeLocation = (val)=>{
+    const {dispatch} = useContext(AppContext);
+    const changeCurrency = (val) => {
         dispatch({
             type: 'CHG_CURRENCY',
             payload: val,
@@ -17,11 +18,11 @@ const ChangeCurrency = () => {
     ]
 
     return (
-        <div className="alert" style={{background: '#B0E5B0'}}> Currency:
+        <div className="alert currency-wrapper"> Currency:
             <select name="currency" id="currency" className="currency-dropdown"
-                    onChange={event => changeLocation(event.target.value)}>
+                    onChange={event => changeCurrency(event.target.value)}>
                 {options.map(option => (
-                    <option key={option.value.toLowerCase()} className="currency-dropdown-option">
+                    <option key={option.value.toLowerCase()} value={option.value} className="currency-dropdown-option">
                         {option.label}
                     </option>
                 ))}
